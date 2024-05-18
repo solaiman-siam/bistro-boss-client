@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.thumbs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carousel .control-dots {
+  bottom: 100px;
+}
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background: aqua;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -33px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+.swiper-pagination {
+  position: static !important;
+  bottom: -35px !important;
+}
+
+.react-tabs__tab-list {
+  margin: auto !important;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
